@@ -3,52 +3,105 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portofolio Saya</title>
+  <title>Rizal Efendi | Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .glass {
+      background: rgba(255, 255, 255, 0.03);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .glass:hover {
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(59, 130, 246, 0.5); /* Blue border on hover */
+    }
+  </style>
 </head>
-<body class="bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white font-sans">
+<body class="bg-[#0f172a] text-slate-200 min-h-screen">
 
-  <!-- Header -->
-  <header class="text-center py-12">
-    <h1 class="text-4xl font-bold">Halo, Saya Rizal Efendi</h1>
-    <p class="mt-3 text-gray-300">Ini adalah portofolio project saya 🚀</p>
+  <header class="relative py-24 overflow-hidden">
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-96 bg-blue-600/20 rounded-full blur-[120px] -z-10"></div>
+    
+    <div class="max-w-4xl mx-auto text-center px-6">
+      <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-emerald-400">
+        Rizal Efendi
+      </h1>
+      <p class="mt-6 text-lg text-slate-400 max-w-2xl mx-auto leading-relaxed">
+        Seorang Web Developer yang berfokus pada pembangunan sistem informasi yang efisien dan modern. 🚀
+      </p>
+      <div class="mt-10 flex justify-center gap-4">
+        <div class="h-1 w-20 bg-blue-500 rounded-full"></div>
+      </div>
+    </div>
   </header>
 
-  <!-- Daftar Project -->
-  <section class="max-w-3xl mx-auto px-6">
-    <h2 class="text-2xl font-semibold mb-6 text-center">Project Saya</h2>
+  <main class="max-w-5xl mx-auto px-6 pb-24">
+    <div class="flex items-center gap-4 mb-12">
+      <h2 class="text-3xl font-bold text-white whitespace-nowrap">Featured Projects</h2>
+      <div class="h-[1px] w-full bg-slate-800"></div>
+    </div>
     
-    <div class="grid gap-6 sm:grid-cols-2">
-      <!-- Project Card -->
-      <a href="https://sippmas.informatik.my.id" target="_blank" 
-         class="bg-gray-800 hover:bg-gray-700 transition p-5 rounded-2xl shadow-lg">
-        <h3 class="text-xl font-bold mb-2">Sippmas Prodi Pif</h3>
-        <p class="text-gray-400 text-sm">Sistem informasi penelitian dan pengabdian masyarakat program studi pendidikan informatika UTM</p>
+    <div class="grid gap-8 md:grid-cols-2">
+      <a href="https://sippmas.informatik.my.id" target="_blank" class="glass group p-8 rounded-3xl transition-all duration-300 hover:-translate-y-2 block">
+        <div class="flex justify-between items-start mb-4">
+            <span class="text-xs font-bold tracking-widest uppercase text-blue-400">Web System</span>
+            <svg class="w-5 h-5 text-slate-500 group-hover:text-blue-400 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </div>
+        <h3 class="text-2xl font-bold mb-3 group-hover:text-white transition-colors">Sippmas Prodi PIF</h3>
+        <p class="text-slate-400 leading-relaxed mb-6">Sistem informasi penelitian dan pengabdian masyarakat untuk UTM. Membantu digitalisasi data akademik.</p>
+        <div class="flex gap-2">
+            <span class="px-3 py-1 bg-slate-800 rounded-full text-[10px] font-semibold text-slate-300 uppercase">Education</span>
+            <span class="px-3 py-1 bg-slate-800 rounded-full text-[10px] font-semibold text-slate-300 uppercase">Management</span>
+        </div>
       </a>
 
-      <a href="https://smekda.informatik.my.id" target="_blank" 
-         class="bg-gray-800 hover:bg-gray-700 transition p-5 rounded-2xl shadow-lg">
-        <h3 class="text-xl font-bold mb-2">SI smekda</h3>
-        <p class="text-gray-400 text-sm">Sistem informasi manajemen pembelajaran kejuruan SMKN 2 Sampang.</p>
+      <a href="https://smekda.informatik.my.id" target="_blank" class="glass group p-8 rounded-3xl transition-all duration-300 hover:-translate-y-2 block">
+        <div class="flex justify-between items-start mb-4">
+            <span class="text-xs font-bold tracking-widest uppercase text-emerald-400">LMS Platform</span>
+            <svg class="w-5 h-5 text-slate-500 group-hover:text-emerald-400 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </div>
+        <h3 class="text-2xl font-bold mb-3 group-hover:text-white transition-colors">SI Smekda</h3>
+        <p class="text-slate-400 leading-relaxed mb-6">Sistem manajemen pembelajaran kejuruan (LMS) khusus untuk SMKN 2 Sampang guna efisiensi KBM.</p>
+        <div class="flex gap-2">
+            <span class="px-3 py-1 bg-slate-800 rounded-full text-[10px] font-semibold text-slate-300 uppercase">Learning</span>
+            <span class="px-3 py-1 bg-slate-800 rounded-full text-[10px] font-semibold text-slate-300 uppercase">PHP</span>
+        </div>
       </a>
 
-      <a href="https://rizalfnd123.github.io/Ojek-Pelosok/" target="_blank" 
-         class="bg-gray-800 hover:bg-gray-700 transition p-5 rounded-2xl shadow-lg">
-        <h3 class="text-xl font-bold mb-2">Ojek Pelosok</h3>
-        <p class="text-gray-400 text-sm">Website profil perusahaan ojek pelosok UTM.</p>
+      <a href="https://rizalfnd123.github.io/Ojek-Pelosok/" target="_blank" class="glass group p-8 rounded-3xl transition-all duration-300 hover:-translate-y-2 block">
+        <div class="flex justify-between items-start mb-4">
+            <span class="text-xs font-bold tracking-widest uppercase text-orange-400">Landing Page</span>
+            <svg class="w-5 h-5 text-slate-500 group-hover:text-orange-400 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </div>
+        <h3 class="text-2xl font-bold mb-3 group-hover:text-white transition-colors">Ojek Pelosok</h3>
+        <p class="text-slate-400 leading-relaxed mb-6">Website profil perusahaan jasa transportasi lokal UTM dengan desain interaktif dan responsif.</p>
+        <div class="flex gap-2">
+            <span class="px-3 py-1 bg-slate-800 rounded-full text-[10px] font-semibold text-slate-300 uppercase">Branding</span>
+            <span class="px-3 py-1 bg-slate-800 rounded-full text-[10px] font-semibold text-slate-300 uppercase">HTML/CSS</span>
+        </div>
       </a>
 
-      <a href="https://pemira.informatik.my.id" target="_blank" 
-         class="bg-gray-800 hover:bg-gray-700 transition p-5 rounded-2xl shadow-lg">
-        <h3 class="text-xl font-bold mb-2">Pemira GenBI UTM</h3>
-        <p class="text-gray-400 text-sm">Website pemilihan ketua umum genbi UTM.</p>
+      <a href="https://pemira.informatik.my.id" target="_blank" class="glass group p-8 rounded-3xl transition-all duration-300 hover:-translate-y-2 block">
+        <div class="flex justify-between items-start mb-4">
+            <span class="text-xs font-bold tracking-widest uppercase text-purple-400">Voting App</span>
+            <svg class="w-5 h-5 text-slate-500 group-hover:text-purple-400 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </div>
+        <h3 class="text-2xl font-bold mb-3 group-hover:text-white transition-colors">Pemira GenBI UTM</h3>
+        <p class="text-slate-400 leading-relaxed mb-6">Platform pemilihan umum elektronik untuk organisasi GenBI wilayah Madura yang aman dan real-time.</p>
+        <div class="flex gap-2">
+            <span class="px-3 py-1 bg-slate-800 rounded-full text-[10px] font-semibold text-slate-300 uppercase">E-Voting</span>
+            <span class="px-3 py-1 bg-slate-800 rounded-full text-[10px] font-semibold text-slate-300 uppercase">Database</span>
+        </div>
       </a>
     </div>
-  </section>
+  </main>
 
-  <!-- Footer -->
-  <footer class="text-center py-8 mt-12 text-gray-400 text-sm">
-    © 2025 Rizal Efendi. Dibuat dengan ❤️ & Tailwind CSS.
+  <footer class="text-center py-12 border-t border-slate-900 bg-[#0c1220]">
+    <p class="text-slate-500 text-sm">
+      &copy; 2025 Rizal Efendi. Crafted with Tailwind CSS.
+    </p>
   </footer>
 
 </body>
